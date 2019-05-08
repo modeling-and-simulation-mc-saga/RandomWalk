@@ -10,14 +10,19 @@ public class WalkerExt {
     protected final AbstractRandom abstractRandom;//乱数生成器
     protected double x;
 
+    /**
+     * 乱数生成器と初期位置を与えて初期化
+     * 
+     * @param abstractRandom
+     * @param x 
+     */
     public WalkerExt(AbstractRandom abstractRandom, double x) {
         this.abstractRandom = abstractRandom;
         this.x = x;
     }
     
     public double walk(){
-        double r = abstractRandom.getNext();
-        x += r;
+        x += abstractRandom.getNext();
         return x;
     }
 

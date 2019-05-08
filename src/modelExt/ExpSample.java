@@ -4,7 +4,7 @@ import java.awt.geom.Point2D;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.util.List;
-import java.util.function.Function;
+import java.util.function.DoubleFunction;
 import randomNumbers.AbstractRandom;
 import randomNumbers.Transform;
 
@@ -22,7 +22,7 @@ public class ExpSample {
         //指数分布に対応した分布関数の逆関数を定義
         // A * exp (-x)
         double A = Math.E / (Math.E - 1);
-        Function<Double, Double> invProDist = (x) -> {
+        DoubleFunction<Double> invProDist = (x) -> {
             return -Math.log(1 - x / A);
         };
         //変換法による乱数生成のインスタンス
