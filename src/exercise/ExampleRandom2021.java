@@ -21,11 +21,11 @@ public class ExampleRandom2021 {
      * @throws java.io.IOException
      */
     public static void main(String[] args) throws IOException {
+        //Define inverse of Distribution
         DoubleFunction<Double> invProDist = x -> {
-            if (x < 0.5) {
-                return -Math.sqrt(1. - 2 * x);
-            }
-            return Math.sqrt(2 * x - 1);
+        
+        
+        
         };
 
         //変換法による乱数生成のインスタンス
