@@ -25,7 +25,7 @@ public class ExampleRandom2021 {
         DoubleFunction<Double> invProDist = x -> {
         
         
-        
+            return 0.;
         };
 
         //変換法による乱数生成のインスタンス
