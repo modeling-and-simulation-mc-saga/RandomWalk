@@ -1,12 +1,9 @@
 package model;
 
-
 import java.awt.geom.Point2D;
-import java.io.BufferedWriter;
+import java.io.PrintStream;
 import java.io.IOException;
 import java.util.List;
-import model.PositionHistogram;
-import model.Simulation;
 
 /**
  *
@@ -27,12 +24,10 @@ public class Main {
         }
         List<Point2D.Double> plist
                 = PositionHistogram.getHist(sys.getWalkers());
-        String filename = Simulation.class.getSimpleName()+"-output-"+String.valueOf(n)+".txt";
-        try (BufferedWriter out
-                = myLib.utils.FileIO.openWriter(filename)) {
-            for (Point2D.Double p : plist) {
-                myLib.utils.FileIO.writeSSV(out, p.x, p.y);
-            }
+        String filename = "Fundamental" 
+                + "-output-" + String.valueOf(n) + ".txt";
+        try ( PrintStream out = new PrintStream(filename)) {
+            plist.forEach(p -> out.println(p.x + " " + p.y));
         }
     }
 
