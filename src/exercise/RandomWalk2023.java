@@ -29,11 +29,11 @@ public class RandomWalk2023 {
     public static void main(String[] args) throws IOException {
         DoubleFunction<Double> invProDist = x -> {
             double y;
-            if (x >= .5) {
-                y = Math.pow(2 * x - 1, 1. / 3.);
-            } else {
-                y = -Math.pow(-2 * x + 1, 1. / 3.);
-            }
+
+            
+        
+            
+        
             return y;
         };
         //変換法による乱数生成のインスタンス
