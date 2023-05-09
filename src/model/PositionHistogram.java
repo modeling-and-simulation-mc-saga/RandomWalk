@@ -32,7 +32,7 @@ public class PositionHistogram {
             xmax = Math.max(xmax, w.getX());
             xmin = Math.min(xmin, w.getX());
         }
-        //Createing the histogram
+        //Creating the histogram
         int h[] = new int[xmax - xmin + 1];
         for (Walker w : walkers) {
             int k = w.getX() - xmin;
