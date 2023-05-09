@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Histobram of positions of random walketrs
+ * Histogram of positions of random walkers
  *
  * @author tadaki
  */
@@ -19,7 +19,7 @@ public class PositionHistogram {
     }
 
     /**
-     * Getting histgram of positions
+     * Getting histogram of positions
      *
      * @param walkers target walkers
      * @return 
