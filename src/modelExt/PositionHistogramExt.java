@@ -6,7 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * Histbram for continuous random walkers
+ * Histogram for continuous random walkers
  *
  * @author tadaki
  */
@@ -17,7 +17,7 @@ public class PositionHistogramExt {
 
     /**
     /**
-     * Getting histgram of positions
+     * Getting histogram of positions
      *
      * @param walkers target walkers
      * @return 
